@@ -1,0 +1,18 @@
+@charset "UTF-8";
+
+.radio-btn{
+  @include mq("sm") {
+    margin-bottom: 15px;
+  }
+  &__label{
+    margin-right: 50px;
+  }
+}
+
+.radio-list{
+  display: flex;
+  padding-left: 10px;
+  @include mq("sm") {
+    flex-direction: column;
+  }
+}

@@ -1,0 +1,50 @@
+@charset "UTF-8";
+
+@import "flex-card";
+
+.card{
+  &__ttl{
+    @include ttl;
+  }
+  &__img_s{
+    width: 100%;
+    height: auto;
+    margin-bottom: 30px;
+  }
+  &__img_m{
+    width: 100%;
+    height: auto;
+    margin-bottom: 30px;
+    @include mq("tab") {
+      margin-bottom: 0;
+    }
+  }
+  &__lead{
+    font-weight: bold;
+    font-size: 0.24rem;
+    margin-bottom: 30px;
+
+  }
+  &__txt{
+    font-size: 0.16rem;
+    letter-spacing: 0.005em;
+    line-height: 2;
+    margin: -0.5em 0 calc(30px - 0.5em) 0;
+  }
+}
+
+.card_bg_white{
+  background: rgba(#fff,0.9);
+}
+
+.card_contact{
+  width: 48%;
+  padding-top: 70px;
+  @include mq("tab") {
+    width: 70%;
+    padding-top: 0;
+  }
+  @include mq("sm") {
+    width: 100%;
+  }
+}

@@ -1,0 +1,22 @@
+@charset "UTF-8";
+
+.top-ttl{
+  &__lead{
+    font-size: 0.2rem;
+    color: #fff;
+    font-weight: bold;
+    @include mq("tab") {
+      font-size: 0.16rem;
+    }
+  }
+  &__ttl{
+    font-size: 0.72rem;
+    line-height: calc(86 / 72);
+    color: #fff;
+    font-weight: 800;
+    @include mq("tab") {
+      font-size: 0.52rem;
+      white-space: nowrap;
+    }
+  }
+}

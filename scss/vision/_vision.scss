@@ -1,0 +1,14 @@
+@charset "UTF-8";
+
+.vision{
+  padding-top: 120px;
+  @include mq("tab") {
+    padding-top: 80px;
+  }
+  &__inner{
+    padding-left: 20%;
+    @include mq("sm") {
+      padding-left: 15%;
+    }
+  }
+}

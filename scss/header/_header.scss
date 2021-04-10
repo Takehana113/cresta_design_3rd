@@ -1,0 +1,34 @@
+@charset "UTF-8";
+
+.header{
+  position: fixed;
+  z-index: 100;
+  width: 100%;
+  padding: 30px 60px;
+  transition: all 0.5s;
+  @include mq("tab") {
+    padding: 30px 30px;
+  }
+  @include mq("sm") {
+    padding: 20px 15px;
+  }
+  &__logo{
+    width: 260px;
+    height: 28px;
+    margin-right: auto;
+    cursor: pointer;
+    @include mq("tab") {
+      width: 189px;
+      height: 21px;
+    }
+  }
+  &__nav-menu{
+    height: 12px;
+    position: relative;
+    top: 8px;
+    left: -40px;
+    @include mq("tab") {
+      top: 4px;
+    }
+  }
+}

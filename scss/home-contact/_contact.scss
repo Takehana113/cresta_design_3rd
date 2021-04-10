@@ -1,0 +1,11 @@
+@charset "UTF-8";
+
+.contact{
+  padding: 60px 0 120px;
+  @include mq("tab") {
+    padding: 40px 0 80px;
+  }
+  @include mq("sm") {
+    padding: 40px 0;
+  }
+}

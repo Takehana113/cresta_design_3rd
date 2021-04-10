@@ -1,0 +1,58 @@
+@charset "UTF-8";
+
+.form {
+  width: 700px;
+  @include mq("tab") {
+    width: 100%;
+  }
+  margin: 0 auto;
+  &__txt {
+    font-size: 0.16rem;
+    font-family: "Noto Sans JP", sans-serif;
+    margin-bottom: 65px;
+  }
+  &__ttl {
+    font-size: 0.16rem;
+    line-height: calc(18 / 16);
+  }
+  &__content {
+    width: 100%;
+    margin: 10px 0 45px;
+    @include mq("tab") {
+      margin: 10px 0 40px;
+    }
+  }
+  &__btn {
+    margin: 0 auto;
+  }
+}
+
+
+.input {
+  height: 40px;
+  border: 1px solid #333;
+  padding: 0 8px;
+  line-height: 20px;
+}
+.textarea {
+  height: 210px;
+  border: 1px solid #333;
+  padding: 8px;
+  line-height: 20px;
+}
+.privacy{
+  height: 210px;
+  border: 1px solid #333;
+  padding: 8px;
+  line-height: 20px;
+  overflow: scroll;
+}
+
+.accept{
+  width: 440px;
+  margin: 0 auto;
+  margin-bottom: 40px;
+  @include mq("sm") {
+    width: 100%;
+  }
+}

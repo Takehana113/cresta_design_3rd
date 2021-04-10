@@ -1,0 +1,42 @@
+@charset "UTF-8";
+
+.menu-list{
+  width: 0px; //jsで570pxと切り替え
+  max-width: 100%;
+  height: 100vh;
+  background: rgba(#222,0.9);
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 110;
+  overflow: hidden;
+  transition: all 0.4s;
+  &__item{
+    &:first-child{
+      margin-top: 30vh;
+    }
+    overflow: hidden;
+  }
+  &__link{
+    display: block;
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    color: #fff;
+    font-size: 0.2rem;
+    font-weight: 800;
+    cursor: pointer;
+    &:hover{
+      background: lighten(rgba(#222,0.9),20%);
+    }
+  }
+  &::before{
+    content: url(../img/logo.png);
+    position: absolute;
+    top: 30vh;
+    left: 50%;
+    transform: translate(-50%,-150px);
+    overflow: hidden;
+  }
+}

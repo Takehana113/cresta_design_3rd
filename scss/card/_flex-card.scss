@@ -1,0 +1,39 @@
+@charset "UTF-8";
+
+.flex-card{
+  display: flex;
+  justify-content: space-between;
+  .card{
+    width: 48%;
+  }
+  @include mq("tab") {
+    flex-direction: column;
+    .card{
+      width: 70%;
+      margin-bottom: 80px;
+      &:last-child{
+        margin-bottom: 0;
+      }
+    }
+    @include mq("sm") {
+      .card{
+        width: 100%;
+        margin-bottom: 40px;
+      }
+    }
+  }
+}
+
+.flex-card_reverce{
+  display: flex;
+  justify-content: space-between;
+  @include mq("tab") {
+    flex-direction: column-reverse;
+    .card{
+      margin-bottom: 30px;
+      &:first-child{
+        margin-bottom: 0;
+      }
+    }
+  }
+}

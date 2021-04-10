@@ -1,0 +1,28 @@
+@charset "UTF-8";
+
+@import "top-img";
+@import "top-ttl";
+
+.top-visual{
+  position: relative;
+  &__rectangle{
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -30;
+    width: 780px;
+    height: 100%;
+    background: #222;
+    @include mq("tab") {
+      width: 73%;
+    }
+  }
+}
+
+.top-visual_size_l{
+  height: 100vh;
+}
+
+.top-visual_size_s{
+  height: 63vh;
+}

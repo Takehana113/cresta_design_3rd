@@ -1,0 +1,23 @@
+@charset "UTF-8";
+
+.topics{
+  padding: 60px 0;
+  @include mq("tab") {
+    padding: 40px 0;
+  }
+  &__ttl{
+    @include ttl;
+  }
+  &__link-list{
+    margin-left: auto;
+    @include mq("tab") {
+      margin-left: 0;
+    }
+  }
+  &__btn{
+    margin-left: auto;
+    @include mq("tab") {
+      margin-left: 0;
+    }
+  }
+}

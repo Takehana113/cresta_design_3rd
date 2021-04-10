@@ -1,0 +1,31 @@
+@charset "UTF-8";
+
+.company{
+  margin: 120px 0;
+  @include mq("tab") {
+    margin: 80px 0;
+
+  }
+  &__ttl{
+    @include ttl;
+    margin-bottom: 0;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #ddd;
+  }
+  &__table{
+    width: 72%;
+    margin: 0 0 30px auto;
+    @include mq("tab") {
+      width: 100%;
+    }
+  }
+  &__map{
+    height: 360px;
+    @include mq("tab") {
+      height: 230px;
+    }
+    @include mq("sm") {
+      height: 470px;
+    }
+  }
+}

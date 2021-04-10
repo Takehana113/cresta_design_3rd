@@ -1,0 +1,65 @@
+@charset "UTF-8";
+
+.top-img{
+  position: relative;
+  width: 76%;
+  z-index: -20;
+  @include mq("tab") {
+    width: 78%;
+  }
+  @include mq("sm") {
+    width: 75%;
+  }
+  &__top-ttl{
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translate(50%,-50%);
+    @include mq("tab") {
+      transform: translate(40%,-50%);
+    }
+    @include mq("sm") {
+      transform: translate(30%,-50%);
+    }
+  }
+}
+
+
+.top-img_main{
+  height: 86vh;
+  background: url(../img/home-top.png) top center / cover;
+}
+
+.top-img_about{
+  height: 50vh;
+  background: url(../img/about-top.png) top center / cover;
+  &__top-ttl{
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translate(50%,-50%);
+    @include mq("tab") {
+      transform: translate(28%,-50%);
+    }
+    @include mq("sm") {
+      transform: translate(20%,-50%);
+    }
+  }
+}
+
+.top-img_contact{
+  height: 50vh;
+  background: url(../img/contact-top.png) center / cover;
+  &__top-ttl{
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translate(50%,-50%);
+    @include mq("tab") {
+      transform: translate(28%,-50%);
+    }
+    @include mq("sm") {
+      transform: translate(20%,-50%);
+    }
+  }
+}

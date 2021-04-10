@@ -1,0 +1,30 @@
+@charset "UTF-8";
+
+.table {
+  border-spacing: 0;
+  &__row {
+    height: 56px;
+  }
+  &__name {
+    width: 20%;
+    font-weight: bold;
+    vertical-align: middle;
+    border-bottom: 1px solid #ddd;
+    border-collapse: collapse;
+    @include mq("sm") {
+      width: 40%;
+      font-size: 0.14rem;
+    }
+    
+  }
+  &__value {
+    width: 80%;
+    vertical-align: middle;
+    border-bottom: 1px solid #ddd;
+    border-collapse: collapse;
+    @include mq("sm") {
+      width: 60%;
+      font-size: 0.14rem;
+    }
+  }
+}

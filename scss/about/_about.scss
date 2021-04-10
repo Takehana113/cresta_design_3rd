@@ -1,0 +1,35 @@
+@charset "UTF-8";
+
+.about{
+  padding-top: 120px;
+  @include mq("tab") {
+    padding-top: 80px;
+  }
+  &__inner{
+    position: relative;
+    height: 610px;
+    background: url(../img/about-bg.png) center / cover;
+    @include mq("tab") {
+      width: 100%;
+    }
+  }
+  &__card{
+    position: absolute;
+    top: 50%;
+    left: 50px;
+    width: 590px;
+    height: 387px;
+    padding: 50px 30px;
+    transform: translate(0,-50%);
+    @include mq("tab") {
+      width: 75%;
+      max-width: 590px;
+      left: 50%;
+      transform: translate(-50%,-50%);
+    }
+    @include mq("sm") {
+      width: 92%;
+      height: 450px;
+    }
+  }
+}
